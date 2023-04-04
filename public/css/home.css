@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Poppins';
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+}
+
+*::-webkit-scrollbar{
+   width: 0px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 15%;
+    transition-duration: .3s;
+    background-color: #ECF2FF;
+    color: #4481eb;
+}
+
+.navbar{
+    display: flex;   
+}
+
+.button{
+    padding: 0 20px;
+    height: 40px;
+    display: inline-block;
+    line-height: 42px;
+    background: #4481eb;
+    color: #fff;
+    border:  none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all .30s;
+}
+
+.button a{
+   text-decoration: none;
+}
+
+.button:hover{
+    transform: translateY(-5px);
+}
+
+section{
+  margin-right: 100px;
+  padding-left: 70px;
+}
+
+.heading{
+   margin-bottom: 30px;
+   margin-right: 100px;
+   padding-left: 70px;
+}
+
+.container .products .box-container{
+   display: flex;
+   grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+   gap: 2rem;
+   align-items: center;
+   margin-top: 4.5rem;
+}
+
+.box{
+   background:#ECF2FF;
+   padding: 25px 20px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: all .35s;
+   margin-top: 10px;
+   justify-content: space-between;
+   width: 310px;
+   height: 450px;
+   z-index: 100px;
+}
+.box h2{
+   color: #4481eb;
+   margin-top: 20px;
+}
+.box h3{
+   color: #4481eb;
+   margin-bottom: 15px;
+}
+
+.box img{
+   margin-left: 10px;
+   margin-right: 10px;
+   width: 245px; 
+   height: 178px; 
+   padding-right: 15px;
+}
+
+.container .products .box-container .box input[type="number"]{
+   margin:10px 0;
+   width: 100%;
+   border:var(--border);
+   border-radius: 5px;
+   font-size: 20px;
+   color:var(--black);
+   padding: 4px;
+}
+
+table {
+   border-spacing: 50px;
+}
+
+.cart {
+   background-color:#fff;
+   color: #4481eb;
+}
+
+.container .shopping-cart{
+   padding:20px 0;
+}
+
+.container .shopping-cart table{
+   width: 100%;
+   text-align: center;
+   border:var(--border);
+   border-radius: 5px;
+   box-shadow: var(--box-shadow);
+   background-color: var(--white);
+}
+
+.container .shopping-cart table thead{
+   background-color: var(--black);
+}
+
+.container .shopping-cart table thead th{
+   padding:10px;
+   color:var(--white);
+   text-transform: capitalize;
+   font-size: 20px;
+}
+
+.container .shopping-cart table .table-bottom{
+   background-color: var(--light-bg);
+}
+
+.container .shopping-cart table tr td{
+   padding:10px;
+   font-size: 20px;
+   color:var(--black);
+}
+
+.container .shopping-cart table tr td:nth-child(1){
+   padding:0;
+}
+
+.container .shopping-cart table tr td input[type="number"]{
+   width: 80px;
+   border:var(--border);
+   padding:12px 14px;
+   font-size: 20px;
+   color:var(--white);
+}
+
+.container .shopping-cart .cart-btn{
+   margin-top: 10px;
+   text-align: center;
+}
+
+.container .shopping-cart .disabled{
+   pointer-events: none;
+   background-color: var(--red);
+   opacity: .5;
+   user-select: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   appearance: none;
+   margin: 0;
+}
+
+.btn{
+        background-color: #4481eb;
+ }
+ 
+ .btn:hover{
+    background-color: #86b2ff;
+ }
+ 
+ .delete-btn{
+    background-color: #e74c3c;
+ }
+ 
+ .delete-btn:hover{
+    background-color: #c0392b;
+ }
+
+
+.btn,
+.delete-btn{
+   width: 100%;
+   border-radius: 5px;
+   padding:10px 30px;
+   color:#fff;
+   display: block;
+   text-align: center;
+   cursor: pointer;
+   font-size: 17px;
+   margin-top: 10px;
+}
+footer{
+   text-align: center;
+   background: var(--main-color);
+   padding: 30px;
+   font-size: 13px;
+   color: var(--bg-color);
+   letter-spacing: 1px;
+}
